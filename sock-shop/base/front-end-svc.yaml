@@ -2,6 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
+  metadata:
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: '60'
+    external-dns.alpha.kubernetes.io/hostname: young.youngsjeong.com
   name: front-end
   labels:
     name: front-end
