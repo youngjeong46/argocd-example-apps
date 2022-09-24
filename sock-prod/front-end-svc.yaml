@@ -20,7 +20,7 @@ metadata:
   name: frontend-ingress
 spec:
   rules:
-  - host: sock.youngsjeong.com
+  - host: sock.prod.youngsjeong.com
     http:
       paths:
       - backend:
