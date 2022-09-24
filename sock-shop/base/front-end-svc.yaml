@@ -17,14 +17,13 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: 'nginx'
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
   name: frontend-ingress
 spec:
   rules:
-  - host: sock.youngsjeong.com
+  - host: '*.youngsjeong.com'
     http:
       paths:
       - backend:
           serviceName: front-end
           servicePort: 80
-        path: /
+        path: /sock
