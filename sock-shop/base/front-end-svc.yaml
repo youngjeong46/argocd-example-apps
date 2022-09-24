@@ -27,5 +27,5 @@ spec:
       paths:
       - backend:
           serviceName: front-end
-          servicePort: 80
+          servicePort: 30001
         path: /
